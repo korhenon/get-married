@@ -1,0 +1,182 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+@font-face {
+    font-family: 'Playfair';
+    src: url("./playfair.ttf");
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url("./raleway.ttf");
+}
+
+body {
+    background-color: #FEE2B3;
+    margin: 0;
+    font-family: 'Playfair';
+}
+
+#splash {
+    height: 100dvh;
+    width: 100vw;
+    position: fixed;
+    -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    color: white;
+    font-family: 'Raleway';
+}
+
+#splash > img {
+    width: 100px;
+    height: 100px;
+    padding-bottom: 30px;
+}
+
+#splash.animate {
+    -webkit-animation: blur 1s ease-in;
+            animation: blur 1s ease-in;
+    -webkit-backdrop-filter: blur(0px);
+            backdrop-filter: blur(0px);
+}
+
+#splash.animate > img, #splash.animate > div {
+    -webkit-animation: opacity 1s ease-in;
+            animation: opacity 1s ease-in;
+    opacity: 0;
+}
+
+header {
+    height: 100vh;
+    background-image: url("./images/photo.jpg");
+    background-size: cover;
+    background-position: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: #FEE2B3;
+}
+
+#header__text {
+    font-size: 28px;
+    text-align: center;
+}
+
+#header__title {
+    font-size: 52px;
+    font-weight: 900;
+}
+
+
+
+.header {
+    font-size: 30px;
+    padding-bottom: 50px;
+}
+
+#place {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-image: url("./images/texture.png");
+    background-size: cover;
+    background-position: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #2f1200;
+}
+
+#place__text.last {
+    padding-bottom: 50px;
+}
+
+#rules {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background: url("./images/photo.jpg");
+    background-size: cover;
+    background-position: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: blur(10px);
+    color: #FEE2B3;
+}
+
+@-webkit-keyframes blur {
+    from {
+        -webkit-backdrop-filter: blur(10px);
+                backdrop-filter: blur(10px);
+    }
+    to {
+        -webkit-backdrop-filter: blur(0px);
+                backdrop-filter: blur(0px);
+    }
+}
+
+@keyframes blur {
+    from {
+        -webkit-backdrop-filter: blur(10px);
+                backdrop-filter: blur(10px);
+    }
+    to {
+        -webkit-backdrop-filter: blur(0px);
+                backdrop-filter: blur(0px);
+    }
+}
+
+@-webkit-keyframes opacity {
+    from {
+        opacity: 100%;
+    }
+    to {
+        opacity: 0%;
+    }
+}
+
+@keyframes opacity {
+    from {
+        opacity: 100%;
+    }
+    to {
+        opacity: 0%;
+    }
+}

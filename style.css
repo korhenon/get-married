@@ -64,6 +64,13 @@ header {
     font-weight: 900;
 }
 
+
+
+.header {
+    font-size: 30px;
+    padding-bottom: 50px;
+}
+
 #place {
     display: flex;
     flex-direction: column;
@@ -76,13 +83,21 @@ header {
     color: #2f1200;
 }
 
-
-#place__header {
-    font-size: 30px;
-    padding-bottom: 50px;
-}
 #place__text.last {
     padding-bottom: 50px;
+}
+
+#rules {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: url("./images/photo.jpg");
+    background-size: cover;
+    background-position: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: blur(10px);
+    color: #FEE2B3;
 }
 
 @keyframes blur {
