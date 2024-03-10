@@ -93,7 +93,7 @@ header {
 }
 
 .header {
-    font-size: 30px;
+    font-size: 32px;
     padding-bottom: 50px;
 }
 
@@ -180,7 +180,9 @@ header {
 }
 
 #rules__text-container {
-    min-height: 80vh;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -188,9 +190,8 @@ header {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
 }
 
 #form {
