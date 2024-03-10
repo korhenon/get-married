@@ -7,12 +7,12 @@
 
 @font-face {
     font-family: 'Playfair';
-    src: url("./playfair.ttf");
+    src: url("./fonts/playfair.ttf");
 }
 
 @font-face {
     font-family: 'Raleway';
-    src: url("./raleway.ttf");
+    src: url("./fonts/raleway.ttf");
 }
 
 body {
@@ -55,6 +55,7 @@ body {
             animation: blur 1s ease-in;
     -webkit-backdrop-filter: blur(0px);
             backdrop-filter: blur(0px);
+    pointer-events: none;
 }
 
 #splash.animate > img, #splash.animate > div {
@@ -176,6 +177,59 @@ header {
 }
 #rules__row > img {
     height: 100px;
+}
+
+#rules__text-container {
+    height: 80vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+
+#form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+textarea {
+    margin-bottom: 20px;
+    background-color: #d9c39c;
+    resize: vertical;
+    min-height: 20px;
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+button {
+    outline: 0;
+    border: 0;
+    background-color: #2f1200;
+    color: #FEE2B3;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 5px;
 }
 
 @-webkit-keyframes blur {

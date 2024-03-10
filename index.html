@@ -25,27 +25,35 @@
     <div id="rules">
         <div id="rules__container">
             <div id="rules__header" class="header">Attention please</div>
-            <div class="rules__text">
+            <div id="rules__text-container">
+                <div class="rules__text">
 ПРИХОДИТЕ В УДОБНОЙ КРАСИВОЙ ОДЕЖДЕ.
 
 ДАМЫ, ЕСЛИ ХОТИТЕ НАДЕНЬ КАБЛУКИ, СОВЕТУЕМ ВЗЯТЬ ЗАПАСНУЮ ОБУВЬ. ПУТЬ К ДОМУ ЛЕЖИТ ПО ПРИЧАЛУ. МЫ НЕ ХОТИМ ПОТЕРЯТЬ ВАС ДО МЕРОПРИЯТИЯ
-            </div>
-            <div id="rules__row">
-                <img src="./images/zhirinovsky.png" alt="">
-                <div class="rules__text">
+                </div>
+                <div id="rules__row">
+                    <img src="./images/zhirinovsky.png" alt="">
+                    <div class="rules__text">
 МЕРОПРИЯТИЕ БУДЕТ НЕТРАДИЦИОННЫМ, БЕЗ ВЕДУЩЕГО.
 
 ЗАПОЛНИТЕ ФОРМУ НИЖЕ, УКАЗАВ КОНКУРСЫ, КАКИЕ ХОТЕЛИ БЫ ВИДЕТЬ НА ТОРЖЕСТВЕ.
 
 БОЛЕЕ ТОГО, БУДЕМ РАДЫ ЛЮБОЙ ВАШЕЙ САМОДЕЯТЕЛЬНОСТИ (ПРЕЗЕНТАЦИИ, ПЕСНИ, ТАНЦЫ). НЕ ЗАБУДЬТЕ УКАЗАТЬ, КАКОЙ АЛКОГОЛЬ БУДЕТЕ ПИТЬ)
+                    </div>
                 </div>
-            </div>
-
-            <div class="rules__text">
+                <div class="rules__text">
 ЕСЛИ У ВАС ЕСТЬ ПЛЕНОЧНЫЙ ФОТОАППАРАТ/ИНСТАКС, ОБЯЗАТЕЛЬНО ПРИНОСИТЕ.
+                </div>
             </div>
         </div>
     </div>
+    <form id="form">
+        <label for="alcohol">Какой алкоголь вы бы хотели видеть на столе?</label>
+        <textarea name="alcohol" id="form__alcohol" cols="30" rows="10"></textarea>
+        <label for="contests">Какие конкурсы вы видите на нашем мероприятие?</label>
+        <textarea name="contests" id="form__contests" cols="30" rows="10"></textarea>
+        <button>Отправить ответ</button>
+    </form>
     <script src="./script.js"></script>
 </body>
 </html>
