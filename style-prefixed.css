@@ -124,6 +124,7 @@ header {
     background: url("./images/photo.jpg");
     background-size: cover;
     background-position: center;
+    min-height: 100vh;
 }
 
 #rules__container {
@@ -144,6 +145,7 @@ header {
     color: white;
     -webkit-backdrop-filter: blur(10px);
             backdrop-filter: blur(10px);
+    min-height: 100vh;
 }
 
 #rules__row {
@@ -161,12 +163,12 @@ header {
 
 .rules__text {
     white-space: pre-wrap;
-    font-size: 10px;
+    font-size: 12px;
     font-weight: 100;
     background-color: rgba(140, 127, 102, 0.564);
     border-radius: 5px;
     padding: 5px;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
 }
 
 #rules__row > .rules__text {
@@ -178,7 +180,7 @@ header {
 }
 
 #rules__text-container {
-    height: 80vh;
+    min-height: 80vh;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -202,7 +204,6 @@ header {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    
     padding-top: 20px;
     padding-bottom: 20px;
     padding-left: 10px;
